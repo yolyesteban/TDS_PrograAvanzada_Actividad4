@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="renderer.css" rel="stylesheet" />
+
+    <title>Actividad 4</title>
+  </head>
+
+  <body style="padding: 1em">
+    <div class="row">
+      <div class="col-md-12">
+        <form id="formulario" method="post">
+          <h1>Actividad 4</h1>
+
+          <fieldset>
+            <legend>
+              <span class="number">1</span> Aplicación para ver imagenes de
+              mishitos
+            </legend>
+
+            <label for="name">Alto:</label>
+            <input type="number" min="50" id="alto" name="alto" />
+
+            <label for="email">Ancho:</label>
+            <input type="number" min="50" id="ancho" name="ancho" />
+
+            <label for="filtro">Filtro:</label>
+            <select id="filtro">
+              <option value="" selected></option>
+              <option value="blur">blur</option>
+              <option value="mono">mono</option>
+              <option value="sepia">sepia</option>
+              <option value="negative">negative</option>
+              <option value="paint">paint</option>
+              <option value="pixel">pixel</option>
+            </select>
+          </fieldset>
+
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+    <div class="respuesta"><img id="respuesta" /></div>
+
+    <label id="scroll"></label>
+
+    <script type="text/javascript" src="renderer.js"></script>
+  </body>
+</html>
